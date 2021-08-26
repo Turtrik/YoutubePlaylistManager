@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'PlaylistManager'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+version = '1.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.json', name: 'json', version: '20201115'
+	compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-youtube:v3-rev222-1.25.0'
+	compile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.4.0'
+}
